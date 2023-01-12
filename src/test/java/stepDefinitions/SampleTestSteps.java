@@ -17,7 +17,8 @@ public class SampleTestSteps {
 
     @Given("User opens home page")
     public void openHomePage() {
-        System.setProperty("driver.chrome.driver", "/usr/local/bin/chromedriver");
+        //System.setProperty("driver.chrome.driver", "/usr/local/bin/chromedriver");
+        System.setProperty("driver.chrome.driver", "/opt/homebrew/bin/chromedriver");
         driver = new ChromeDriver();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
